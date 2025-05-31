@@ -15,4 +15,4 @@ print(greeting + ' ' + name)
 
 # Taking user inputs
 user_name = input('Enter Your Name: ')
-print('Hello ' + user_name)
+print('Hello ' + user_name + ' How are you?')
