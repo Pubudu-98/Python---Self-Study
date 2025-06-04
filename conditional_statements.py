@@ -37,3 +37,18 @@ for i in range(10):
     print('Current Number :', i)
 
 #--Exercise:
+
+secret_number = 2
+
+while True:
+
+    guess = int(input('Guess the secret number between 1 and 10:'))
+
+    if guess < secret_number:
+        print('Too low! Try again.')
+    elif guess > secret_number:
+        print('Too high! Try again.')
+    else:
+        print('Congarts! You guessed the secret number.')
+        
+        break
