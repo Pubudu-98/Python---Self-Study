@@ -46,12 +46,12 @@ This repo is designed for anyone looking to learn and practice core Python progr
   - Function arguments and return values
   - Scope and basic best practices
 
-## Object-Oriented Programming (OOP) in Python
+### 7. Object-Oriented Programming (OOP) in Python
 
 - Introduced the basics of OOP in Python, explaining the concepts of classes and objects.
 - Added example code for defining a simple class (`Car`) with properties (`make`, `model`, `year`) and a method (`details`).
 - Demonstrated how to create objects (instances) of the `Car` class and call their methods.
-- Included comments and example syntax for class structure and object instantiation.
+- Comments and example syntax for class structure and object instantiation were included.
 
 ---
 
