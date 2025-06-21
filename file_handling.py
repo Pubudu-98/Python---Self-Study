@@ -22,3 +22,10 @@ with open('example.txt', 'a') as file:
 # Binary file handling
 with open('example.jpg', 'rb') as file:
     image_data = file.read()
+
+# Exercise: Create a new text file, write some content to it, and then read the content back.
+with open('file_1.txt', 'w') as file:
+    file.write('This is the file content here.....')
+with open('file_1.txt', 'r') as file:
+    file_content_1 = file.read()
+print(file_content_1)
