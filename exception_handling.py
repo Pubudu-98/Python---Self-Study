@@ -18,3 +18,8 @@ else:
     print('Your number is', value_1)
 finally:
     print('Execution is completed!!!')
+
+# Value error
+age = 26
+if age < 0:
+    raise ValueError ('Age cannot be a negetive value...!')
