@@ -1,7 +1,7 @@
 # Python Self-Study
 
 Welcome to the **Python Self-Study** repository!  
-This repo is designed for anyone looking to learn and practice core Python programming concepts through simple, focused scripts. Each file explores a fundamental topic in Python, making it a great resource for beginners and as a refresher for experienced developers.
+This repo is for anyone looking to learn and practice core Python programming concepts through simple, focused scripts. Each file explores a fundamental topic in Python, making it a great resource for beginners and those wanting to refresh their knowledge.
 
 ---
 
@@ -9,7 +9,7 @@ This repo is designed for anyone looking to learn and practice core Python progr
 
 ### 1. Hello World
 - **File:** [`Hello_World.py`](Hello_World.py)
-- **Concept:** The traditional starting point for learning any language. This file demonstrates how to print output in Python.
+- **Concept:** The traditional starting point for learning any language. Demonstrates how to print output in Python.
 
 ### 2. Basic Operations
 - **File:** [`basic_operations.py`](basic_operations.py)
@@ -30,7 +30,8 @@ This repo is designed for anyone looking to learn and practice core Python progr
 - **Concepts:**  
   - `if`, `elif`, `else` statements
   - Comparison and logical operators
-  - Branching logic in code
+  - Simple branching logic in code
+  - Includes basic loops (for, while), `break`, and `continue`
 
 ### 5. Dictionaries
 - **File:** [`dictionaries.py`](dictionaries.py)
@@ -39,19 +40,27 @@ This repo is designed for anyone looking to learn and practice core Python progr
   - Accessing, adding, and deleting key-value pairs
   - Iterating through dictionaries
 
-### 6. Functions
+### 6. File Handling
+- **File:** [`file_handling.py`](file_handling.py)
+- **Concepts:**  
+  - Reading from and writing to files
+  - Using Python's built-in file functions (`open`, `read`, `write`, etc.)
+  - File modes and context managers (`with` statement)
+
+### 7. Functions
 - **File:** [`functions.py`](functions.py)
 - **Concepts:**  
   - Defining and calling functions
   - Function arguments and return values
   - Scope and basic best practices
 
-### 7. Object-Oriented Programming (OOP) in Python
-
-- Introduced the basics of OOP in Python, explaining the concepts of classes and objects.
-- Added example code for defining a simple class (`Car`) with properties (`make`, `model`, `year`) and a method (`details`).
-- Demonstrated how to create objects (instances) of the `Car` class and call their methods.
-- Comments and example syntax for class structure and object instantiation were included.
+### 8. Object-Oriented Programming (OOP)
+- **File:** [`objects_classes.py`](objects_classes.py)
+- **Concepts:**  
+  - Classes and objects in Python
+  - Defining constructors, properties, and methods
+  - Example: a simple `Car` class with properties and a method
+  - Instantiating objects and calling their methods
 
 ---
 
@@ -71,44 +80,46 @@ This repo is designed for anyone looking to learn and practice core Python progr
 
 ---
 
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
----
 ## Python Theories Explained & Demonstrated in This Repository
 
-This repository is organized to help you learn and apply key Python programming concepts through hands-on coding. Here’s a breakdown of the theories you’ll find, with each linked to practical scripts demonstrating them:
+This repository is organized to help you learn and apply key Python programming concepts through hands-on coding. Here’s a breakdown of the theories you’ll find, each linked to practical code examples:
 
 1. **Hello World**
    - *File:* [`Hello_World.py`](Hello_World.py)
-   - *Theory:* Introduction to Python syntax and the `print()` function, the foundation of Python output.
+   - *Theory:* Introduction to Python syntax and the `print()` function.
 
 2. **Basic Operations**
    - *File:* [`basic_operations.py`](basic_operations.py)
-   - *Theory:* Covers arithmetic operations (addition, subtraction, multiplication, division, modulus, floor division), variable usage, string concatenation, and user input handling. Also includes a simple exercise involving user-driven computations.
+   - *Theory:* Arithmetic operations, variable usage, string concatenation, and user input handling.
 
 3. **Collections (Lists, Tuples, Sets)**
    - *File:* [`collections.py`](collections.py)
-   - *Theory:* Explains Python’s built-in collection types:
-     - **Lists:** Mutable, ordered sequences (add, remove, access by index).
-     - **Tuples:** Immutable, ordered sequences.
+   - *Theory:* Python’s built-in collection types:  
+     - **Lists:** Mutable, ordered sequences.  
+     - **Tuples:** Immutable, ordered sequences.  
      - **Sets:** Mutable, unordered collections of unique items.
-   - Practical manipulations such as appending, removing, and converting collections are demonstrated.
+   - Demonstrates appending, removing, and converting between collection types.
 
 4. **Conditional Statements & Loops**
    - *File:* [`conditional_statements.py`](conditional_statements.py)
-   - *Theory:* Teaches decision-making with `if`, `elif`, and `else`; logical and comparison operators; and control flow using loops (`for`, `while`). Also covers `break` and `continue` usage, and includes exercises like a number-guessing game to solidify the concepts.
+   - *Theory:* Decision-making using `if`, `elif`, `else`; logical and comparison operators; and control flow using loops (`for`, `while`), including `break` and `continue`.
 
 5. **Dictionaries**
    - *File:* [`dictionaries.py`](dictionaries.py)
-   - *Theory:* Highlights the use of dictionaries for storing key-value pairs. Demonstrates creating, accessing, adding, deleting, and iterating over dictionary items.
+   - *Theory:* Storing and manipulating key-value pairs; creating, accessing, adding, deleting, and iterating over dictionary items.
 
-6. **Functions**
+6. **File Handling**
+   - *File:* [`file_handling.py`](file_handling.py)
+   - *Theory:* Reading from and writing to files, file modes, and the use of context managers for safe file operations.
+
+7. **Functions**
    - *File:* [`functions.py`](functions.py)
-   - *Theory:* Introduces function definition using `def`, parameters, return values, and variable scope. Shows how to call functions, pass arguments, and apply best practices. Exercises include writing custom functions for greetings, addition, and area calculation.
+   - *Theory:* Function definition using `def`, parameters, return values, variable scope, calling functions, passing arguments, and best practices.
 
-7. **Object-Oriented Programming (OOP)**
+8. **Object-Oriented Programming (OOP)**
    - *File:* [`objects_classes.py`](objects_classes.py)
-   - *Theory:* Explains class and object concepts in Python. Demonstrates how to define a class with a constructor, properties, and methods (such as the `Car` example), instantiate objects, and call their methods. All code is commented for clarity and learning.
+   - *Theory:* Introduction to classes and objects in Python. Shows how to define a class, use constructors and methods, instantiate objects, and call their methods.
 
 ---
+
 Happy learning! 🚀
