@@ -1,7 +1,7 @@
-# Python Self-Study — A Theory Book for Python Programming
+# Python Self-Study — Theory Book & Practice Scripts
 
 Welcome to the **Python Self-Study** repository!  
-This repository is structured as a "theory book" and practice resource for learning and revisiting Python programming concepts. Each script in this collection is dedicated to a specific core topic in Python, with concise code examples and explanations. Use this as a reference or study guide to reinforce your Python knowledge!
+This repository is designed as your Python “theory book” and practice reference. Each script explores a core Python concept, combining concise theory with practical code. Use it to learn, revise, or prepare for interviews.
 
 ---
 
@@ -15,8 +15,9 @@ This repository is structured as a "theory book" and practice resource for learn
 6. [File Handling](#6-file-handling)
 7. [Functions](#7-functions)
 8. [Object-Oriented Programming (OOP)](#8-object-oriented-programming-oop)
-9. [How to Use](#how-to-use)
-10. [Happy Learning! 🚀](#happy-learning-)
+9. [Comprehensions & Generators](#9-comprehensions--generators)
+10. [How to Use](#how-to-use)
+11. [Happy Learning! 🚀](#happy-learning-)
 
 ---
 
@@ -24,13 +25,13 @@ This repository is structured as a "theory book" and practice resource for learn
 
 - **File:** [`Hello_World.py`](Hello_World.py)
 - **Concept:**  
-  The simplest Python script. Demonstrates the `print()` function, which outputs text to the console.
+  The classic starting point — demonstrates output with `print()`.
 - **Example:**
   ```python
   print("Hello, World!")
   ```
-- **Key Takeaway:**  
-  Every Python program starts with basic output. `print()` is essential for debugging and user interaction.
+- **Key Point:**  
+  `print()` is essential for output and debugging.
 
 ---
 
@@ -38,20 +39,19 @@ This repository is structured as a "theory book" and practice resource for learn
 
 - **File:** [`basic_operations.py`](basic_operations.py)
 - **Concepts:**  
-  - Arithmetic operations: `+`, `-`, `*`, `/`, `//`, `%`, `**`
-  - Assigning and using variables
-  - Basic data types: `int`, `float`, `str`
-  - User input with `input()`
+  - Arithmetic: `+`, `-`, `*`, `/`, `//`, `%`, `**`
+  - Variables and assignment
+  - Data types: `int`, `float`, `str`
+  - Getting user input with `input()`
 - **Example:**
   ```python
-  a = 5
-  b = 2
-  print(a + b)  # Addition
-  print(a ** b) # Exponentiation
-  name = input("Enter your name: ")
+  a = 10
+  b = 5
+  print(a / b)
+  name = input("Your name: ")
   ```
-- **Key Takeaway:**  
-  Python handles numbers and text intuitively. Variables are dynamically typed.
+- **Key Point:**  
+  Python is dynamically typed and handles basic math and text easily.
 
 ---
 
@@ -59,18 +59,17 @@ This repository is structured as a "theory book" and practice resource for learn
 
 - **File:** [`collections.py`](collections.py)
 - **Concepts:**
-  - **Lists:** Mutable, ordered collections.  
-    - Methods: `append()`, `remove()`, `sort()`
-  - **Tuples:** Immutable, ordered collections.
-  - **Sets:** Mutable, unordered collections of unique elements.
+  - **Lists:** Mutable, ordered. Methods like `append`, `remove`, `sort`.
+  - **Tuples:** Immutable, ordered.
+  - **Sets:** Mutable, unordered, unique items.
 - **Example:**
   ```python
-  my_list = [1, 2, 3]
-  my_tuple = (4, 5, 6)
-  my_set = {1, 2, 2, 3} # {1, 2, 3}
+  l = [1, 2, 3]
+  t = (4, 5, 6)
+  s = {1, 2, 2, 3}  # {1, 2, 3}
   ```
-- **Key Takeaway:**  
-  Choose lists for flexible sequences, tuples for fixed data, and sets for unique items.
+- **Key Point:**  
+  Lists for changeable sequences. Tuples for fixed collections. Sets for uniqueness.
 
 ---
 
@@ -78,24 +77,23 @@ This repository is structured as a "theory book" and practice resource for learn
 
 - **File:** [`conditional_statements.py`](conditional_statements.py)
 - **Concepts:**
-  - `if`, `elif`, `else` for decision making
-  - Comparison operators: `==`, `!=`, `<`, `>`, `<=`, `>=`
-  - Logical operators: `and`, `or`, `not`
-  - **Loops:** `for` and `while` for repetition
-  - Control commands: `break`, `continue`
+  - `if`, `elif`, `else` for decision logic
+  - Comparison: `==`, `!=`, `<`, `>`, `<=`, `>=`
+  - Logic: `and`, `or`, `not`
+  - **Loops:** `for`, `while`; `break` and `continue`
 - **Example:**
   ```python
-  age = 18
-  if age >= 18:
-      print("Adult")
+  n = 10
+  if n > 5:
+      print("Greater than five")
   else:
-      print("Minor")
+      print("Five or less")
 
-  for i in range(5):
+  for i in range(3):
       print(i)
   ```
-- **Key Takeaway:**  
-  Control flow is fundamental to building logic in any program.
+- **Key Point:**  
+  Control flow is the backbone of program logic.
 
 ---
 
@@ -103,19 +101,18 @@ This repository is structured as a "theory book" and practice resource for learn
 
 - **File:** [`dictionaries.py`](dictionaries.py)
 - **Concepts:**
-  - Key-value data structure
-  - Access, add, remove, and update elements
-  - Looping through keys, values, and items
+  - Key-value storage
+  - Access, add, update, delete items
+  - Looping with `.items()`
 - **Example:**
   ```python
-  person = {"name": "Alice", "age": 30}
-  print(person["name"])
-  person["city"] = "NY"
-  for key, value in person.items():
-      print(key, value)
+  d = {"name": "Bob", "age": 25}
+  d["city"] = "London"
+  for k, v in d.items():
+      print(k, v)
   ```
-- **Key Takeaway:**  
-  Dictionaries are ideal for structured, labeled data.
+- **Key Point:**  
+  Use dictionaries for structured, labeled data.
 
 ---
 
@@ -123,21 +120,20 @@ This repository is structured as a "theory book" and practice resource for learn
 
 - **File:** [`file_handling.py`](file_handling.py)
 - **Concepts:**
-  - Opening files with `open()`
-  - Reading: `.read()`, `.readline()`, `.readlines()`
-  - Writing and appending: `'w'`, `'a'` modes
-  - Using `with` statement for safe file handling (auto-closes file)
+  - Open files: `open()`
+  - Read: `.read()`, `.readline()`, `.readlines()`
+  - Write/append: modes `'w'`, `'a'`
+  - Context manager: `with`
 - **Example:**
   ```python
-  with open("example.txt", "w") as f:
-      f.write("Hello File")
+  with open("test.txt", "w") as f:
+      f.write("Hello file!")
 
-  with open("example.txt", "r") as f:
-      content = f.read()
-      print(content)
+  with open("test.txt", "r") as f:
+      print(f.read())
   ```
-- **Key Takeaway:**  
-  Always use `with` for file operations to prevent resource leaks.
+- **Key Point:**  
+  Always use `with` for safer file operations.
 
 ---
 
@@ -145,21 +141,20 @@ This repository is structured as a "theory book" and practice resource for learn
 
 - **File:** [`functions.py`](functions.py)
 - **Concepts:**
-  - Defining functions with `def`
-  - Parameters and return values
-  - Scope (local vs global variables)
+  - Create functions: `def`
+  - Parameters, return values
+  - Scope (local/global)
   - Docstrings for documentation
 - **Example:**
   ```python
-  def add(a, b):
-      """Return the sum of a and b."""
-      return a + b
+  def square(x):
+      """Return the square of x."""
+      return x * x
 
-  result = add(2, 3)
-  print(result)
+  print(square(4))
   ```
-- **Key Takeaway:**  
-  Functions organize code, enable reuse, and clarify intent.
+- **Key Point:**  
+  Functions promote code reuse and clarity.
 
 ---
 
@@ -167,10 +162,10 @@ This repository is structured as a "theory book" and practice resource for learn
 
 - **File:** [`objects_classes.py`](objects_classes.py)
 - **Concepts:**
-  - Classes and objects
-  - Constructors: `__init__`
-  - Instance attributes and methods
-  - Example: Simple `Car` class
+  - Classes and object creation
+  - Constructor: `__init__`
+  - Instance variables and methods
+  - Example: `Car` class
 - **Example:**
   ```python
   class Car:
@@ -180,11 +175,45 @@ This repository is structured as a "theory book" and practice resource for learn
       def details(self):
           return f"{self.make} {self.model}"
 
-  my_car = Car("Toyota", "Corolla")
-  print(my_car.details())
+  mycar = Car("Toyota", "Corolla")
+  print(mycar.details())
   ```
-- **Key Takeaway:**  
-  OOP is used to model real-world entities and relationships in code.
+- **Key Point:**  
+  OOP is for modeling real-world entities and relationships.
+
+---
+
+## 9. Comprehensions & Generators
+
+- **File:** [`comprehensions_generators.py`](comprehensions_generators.py)
+- **Concepts:**
+  - **List Comprehensions:** Compactly create lists from iterables.
+    ```python
+    numbers = [1,2,3,4,5,6,7]
+    squared = [x**2 for x in numbers if x % 2 == 0]
+    ```
+  - **Dictionary Comprehensions:** Make dictionaries from iterables.
+    ```python
+    names = ['Alice', 'Bob', 'Charlie']
+    lengths = {name: len(name) for name in names}
+    ```
+  - **Set Comprehensions:** Build sets with unique elements.
+    ```python
+    nums = [1,2,2,3,4,4,5,5,6]
+    unique_squared = {x**2 for x in nums}
+    ```
+  - **Generators:**  
+    - Yield items one at a time (memory-efficient).
+    - Created with functions using `yield` or generator expressions.
+    ```python
+    def generate_numbers():
+        for i in range(1, 10):
+            yield i
+    for num in generate_numbers():
+        print(num)
+    ```
+- **Key Point:**  
+  Comprehensions are concise and expressive; generators save memory for large data.
 
 ---
 
@@ -206,4 +235,5 @@ This repository is structured as a "theory book" and practice resource for learn
 
 ## Happy Learning! 🚀
 
-Use this repository as a living theory book — read the explanations, study the code, and run scripts to experiment. Come back whenever you need to review Python basics or prepare for coding interviews!
+Treat this repository as your living theory book:  
+Read the explanations, study the code, and run scripts to experiment. Come back whenever you want to review Python basics or prepare for coding interviews!
