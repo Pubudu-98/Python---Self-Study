@@ -22,3 +22,14 @@ class User:
         print(self.age)
 user = User('Pubudu Piyumal', 27)
 user.user_info()
+
+class Animal:
+    def __init__(self, breed_1, breed_2):
+        self.breed_1 = breed_1
+        self.breed_2 = breed_2
+    
+    def breed_info(self):
+        print(self.breed_1)
+        print(self.breed_2)
+animal = Animal('Dog', 'Cat')
+animal.breed_info()
