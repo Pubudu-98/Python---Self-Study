@@ -29,7 +29,16 @@ class Animal:
         self.breed_2 = breed_2
     
     def breed_info(self):
-        print(self.breed_1)
-        print(self.breed_2)
+        return f"Breed Category: {self.breed_1} | Breed Category: {self.breed_2}"
 animal = Animal('Dog', 'Cat')
-animal.breed_info()
+print(animal.breed_info())
+
+class Module:
+    def __init__(self, module_name, module_id):
+        self.module_name = module_name
+        self.module_id = module_id
+
+    def module_info(self):
+        return f"Module Name: {self.module_name} | Module ID: {self.module_id}"
+module = Module('Python', 'CS001')
+print(module.module_info())
